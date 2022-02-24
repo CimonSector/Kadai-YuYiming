@@ -6,12 +6,10 @@ use Illuminate\Http\Request;
 
 class Circle extends Controller
 {
-    
-
-    function CircleA(Request $request){
-        define("a",3.14);
+    function CircleA(Request $request){       
         $num = $request->input('number'); 
-        return a * ($num*$num);
+        $result = 3.14 * ($num*$num);
+        return $result;
 
     }
 }

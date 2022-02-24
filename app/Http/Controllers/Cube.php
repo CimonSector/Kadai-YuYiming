@@ -6,8 +6,9 @@ use Illuminate\Http\Request;
 
 class Cube extends Controller
 {
-     public function cube(Request $request){
+    public function cube(Request $request){
         $num = $request->input('number'); 
-        return $num*$num*$num;
+        $result = pow($num,3);
+        return $result;
     }
 }

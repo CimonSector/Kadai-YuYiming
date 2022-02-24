@@ -8,6 +8,7 @@ class Square extends Controller
 {
     public function sqrt(Request $request){
         $num = $request->input('number'); 
-        return pow($num,2);
+        $result = pow($num,2);
+        return $result;
     }
 }
